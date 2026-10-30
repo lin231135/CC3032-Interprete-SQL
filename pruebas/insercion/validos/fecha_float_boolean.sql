@@ -1,0 +1,5 @@
+-- @caso: texto -> DATE, INT -> FLOAT, BOOLEAN
+-- @resultado: 2024-02-29, 3.0, FALSE
+CREATE TABLE t (d DATE, f FLOAT, b BOOLEAN);
+INSERT INTO t VALUES ('2024-02-29', 3, FALSE);
+SELECT d, f, b FROM t;
