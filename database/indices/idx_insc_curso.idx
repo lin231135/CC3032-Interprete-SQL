@@ -1,0 +1,9 @@
+# indice: idx_insc_curso
+# tabla: inscripciones
+# columna: curso_id
+# tipo: INT
+# unico: NO
+1|0,5,9
+2|1,6,12
+3|2,3,7,10
+4|4,8,11

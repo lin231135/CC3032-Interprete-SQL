@@ -1,0 +1,12 @@
+# indice: idx_edad
+# tabla: estudiantes
+# columna: edad
+# tipo: INT
+# unico: NO
+16|6
+17|1
+18|4
+19|3
+20|0
+22|2
+25|5

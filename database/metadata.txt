@@ -1,0 +1,31 @@
+# metadata.txt - catálogo de la base de datos (lo escribe el intérprete SQL)
+
+TABLA estudiantes
+  COLUMNA id INT NOT NULL
+  COLUMNA nombre VARCHAR(50) NOT NULL
+  COLUMNA edad INT NULL
+  COLUMNA carrera VARCHAR(30) NULL DEFAULT 'Sistemas'
+  COLUMNA activo BOOLEAN NULL DEFAULT TRUE
+  COLUMNA ingreso DATE NULL
+  PRIMARY KEY (id)
+FIN
+
+TABLA cursos
+  COLUMNA id INT NOT NULL
+  COLUMNA nombre VARCHAR(40) NOT NULL
+  COLUMNA creditos INT NOT NULL
+  PRIMARY KEY (id)
+  UNIQUE (nombre)
+FIN
+
+TABLA inscripciones
+  COLUMNA estudiante_id INT NOT NULL
+  COLUMNA curso_id INT NOT NULL
+  COLUMNA nota FLOAT NULL
+  PRIMARY KEY (estudiante_id, curso_id)
+  FOREIGN KEY (estudiante_id) REFERENCES estudiantes (id)
+  FOREIGN KEY (curso_id) REFERENCES cursos (id)
+FIN
+
+INDICE idx_edad ON estudiantes (edad)
+INDICE idx_insc_curso ON inscripciones (curso_id)

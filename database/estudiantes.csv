@@ -1,0 +1,9 @@
+id,nombre,edad,carrera,activo,ingreso
+1,Ana López,20,Sistemas,TRUE,2023-01-15
+2,Bruno Díaz,17,Industrial,TRUE,2024-01-10
+3,Carla Méndez,22,Sistemas,FALSE,2021-07-01
+4,Diego Ruiz,19,Civil,TRUE,2023-07-03
+5,Elena Castro,18,Sistemas,TRUE,2024-01-10
+6,Fernando Paz,25,Civil,TRUE,2019-01-20
+7,Gabriela Soto,16,Industrial,TRUE,\N
+8,Hugo Morales,\N,Sistemas,TRUE,2022-01-12
